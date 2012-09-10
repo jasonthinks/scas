@@ -29,5 +29,7 @@
         <class>org.jasig.cas.ticket.TicketGrantingTicketImpl</class>
         <class>org.jasig.cas.ticket.ServiceTicketImpl</class>
         <class>org.jasig.cas.ticket.registry.support.JpaLockingStrategy$Lock</class>
+<!--         <class>us.mytea.scas.domain.SocialConnection</class> -->
+<!--         <class>us.mytea.scas.domain.UserAccount</class> -->
 	</persistence-unit>
 </persistence>

@@ -71,6 +71,22 @@
                         <input class="btn-submit" name="submit" accesskey="l" value="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
                         <input class="btn-reset" name="reset" accesskey="c" value="<spring:message code="screen.welcome.button.clear" />" tabindex="5" type="reset" />
                     </div>
+                     <a href="${FacebookProviderUrl}">Authenticate with Facebook</a> <br />
+					<!-- 
+					<br /> 
+					<a href="${TwitterProviderUrl}">Authenticate with Twitter</a><br />
+					<br />
+					<a href="${GoogleProviderUrl}">Authenticate with Google</a><br /> 
+					<br />
+					<a href="${YahooProviderUrl}">Authenticate with Yahoo</a><br /> 
+					<br />
+					<a href="${LinkedInProviderUrl}">Authenticate with LinkedIn</a><br /> 
+					<br />
+					<a href="${GitHubProviderUrl}">Authenticate with GitHub</a><br /> 
+					<br />
+					<a href="${CasWrapperProvider20Url}">Authenticate with another CAS server using OAuth v2.0 protocol wrapper</a><br />
+					<br />
+					 -->
             </form:form>
           </div>
             <div id="sidebar">

@@ -102,4 +102,49 @@
 
     <!-- The scheduler bean wires up any triggers that define scheduled tasks -->
     <bean id="scheduler" class="org.jasig.cas.util.AutowiringSchedulerFactoryBean"/>
+    
+    <bean id="facebook1" class="org.scribe.up.provider.impl.FacebookProvider">
+	  <property name="key" value="434323439938716" />
+	  <property name="secret" value="ac3bf2aa22c13d227782576ac78deddc" />
+	  <property name="callbackUrl" value="https://localhost/account/login" />
+	</bean>
+	
+	 <!-- 
+	<bean id="twitter1" class="org.scribe.up.provider.impl.TwitterProvider">
+	  <property name="key" value="the_key_for_twitter1" />
+	  <property name="secret" value="the_secret_for_twitter1" />
+	  <property name="callbackUrl" value="http://mycasserver/login" />
+	</bean>
+	 
+	<bean id="google1" class="org.scribe.up.provider.impl.GoogleProvider">
+	  <property name="key" value="the_key_for_google1" />
+	  <property name="secret" value="the_secret_for_google1" />
+	  <property name="callbackUrl" value="http://mycasserver/login" />
+	</bean>
+	 
+	<bean id="yahoo1" class="org.scribe.up.provider.impl.YahooProvider">
+	  <property name="key" value="the_key_for_yahoo1" />
+	  <property name="secret" value="the_secret_for_yahoo1" />
+	  <property name="callbackUrl" value="http://mycasserver/login" />
+	</bean>
+	 
+	<bean id="linkedin1" class="org.scribe.up.impl.LinkedInProvider">
+	  <property name="key" value="the_key_for_linkedin1" />
+	  <property name="secret" value="the_secret_for_linkedin1" />
+	  <property name="callbackUrl" value="http://mycasserver/login" />
+	</bean>
+	 
+	<bean id="github1" class="org.scribe.up.provider.impl.GitHubProvider">
+	  <property name="key" value="the_key_for_github1" />
+	  <property name="secret" value="the_secret_for_github1" />
+	  <property name="callbackUrl" value="http://mycasserver/login" />
+	</bean>
+	 
+	<bean id="caswrapper1" class="org.jasig.cas.support.oauth.provider.impl.CasWrapperProvider20">
+	  <property name="key" value="the_key_for_caswrapper1" />
+	  <property name="secret" value="the_secret_for_caswrapper1" />
+	  <property name="callbackUrl" value="http://mycasserver/login" />
+	  <property name="serverUrl" value="http://mycasserverwithoauthwrapper/oauth2.0" />
+	</bean>
+	 -->
 </beans>

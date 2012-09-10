@@ -29,6 +29,7 @@
     <param-value>
       /WEB-INF/spring-configuration/*.xml
       /WEB-INF/deployerConfigContext.xml
+      classpath*:spring/*.xml
     </param-value>
   </context-param>
 

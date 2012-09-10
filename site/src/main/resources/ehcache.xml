@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+	<diskStore path="E:/social-sso-init/spring-security/spring-security/samples/cas/sample/cache" />
+	<defaultCache maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="100" timeToLiveSeconds="1000" overflowToDisk="true" />
+</ehcache>

@@ -30,5 +30,13 @@
 	</description>
        
 	<bean id="propertyPlaceholderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
-		p:location="/WEB-INF/cas.properties" />
+		p:location="file:///etc/scas/cas.properties" />
+		
+		<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>file:///etc/scas/jdbc.properties</value>
+            </list>
+        </property>
+        </bean>
 </beans>

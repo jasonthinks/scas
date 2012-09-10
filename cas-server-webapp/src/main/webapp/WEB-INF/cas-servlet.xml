@@ -253,4 +253,22 @@
 
   <bean id="credentialsValidator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"
         p:messageInterpolator-ref="messageInterpolator"/>
+        
+   <bean id="oauthAction" class="us.mytea.scas.web.ScasOAuthAction">
+	  <property name="centralAuthenticationService" ref="centralAuthenticationService" />
+	  <property name="accountService" ref="userDetailsService"/>
+	  <property name="providers">
+	    <list>
+	      <ref bean="facebook1" />
+	      <!-- 
+	      <ref bean="twitter1" />
+	      <ref bean="google1" />
+	      <ref bean="yahoo1" />
+	      <ref bean="linkedin1" />
+	      <ref bean="github1" />
+	      <ref bean="caswrapper1" />
+	       -->
+	    </list>
+	  </property>
+	</bean>
 </beans>
