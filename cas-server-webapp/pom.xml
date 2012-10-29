@@ -197,7 +197,7 @@
 						<connector implementation="org.eclipse.jetty.server.ssl.SslSocketConnector">
 							<port>443</port>
 							<keystore>keys/server.keystore</keystore>
-							<keyPassword>ockan#@cke</keyPassword>
+							<keyPassword>thepassword</keyPassword>
 						</connector>
 					</connectors>
 					<jvmArgs> -Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m -Djava.awt.headless=true</jvmArgs>
